@@ -58,7 +58,7 @@ function VideoPlayer({ sources, internalPlayer, setInternalPlayer, title }) {
           if (hls.autoLevelEnabled) {
             videoRef.current.plyr.elements.settings.popup.innerText = `Auto (${hls.levels[data.level].height}p)`;
           } else {
-            videoRef.current.plyr.elements.settings.popup.innerText.innerHTML = `Auto`;
+            videoRef.current.plyr.elements.settings.popup.innerText = `Auto`;
           }
         });
         let player = new plyr(videoRef.current, defaultOptions);
